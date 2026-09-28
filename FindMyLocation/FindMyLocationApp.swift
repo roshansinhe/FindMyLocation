@@ -1,14 +1,13 @@
-//
-//  FindMyLocationApp.swift
-//  FindMyLocation
-//
-//  Created by Roshan Sinhe on 27/09/26.
-//
-
 import SwiftUI
+import GoogleMobileAds
 
 @main
 struct FindMyLocationApp: App {
+    init() {
+        // Initialize Google Mobile Ads SDK using Swift syntax
+        MobileAds.shared.start(completionHandler: nil)
+    }
+
     var body: some Scene {
         WindowGroup {
             ContentView()

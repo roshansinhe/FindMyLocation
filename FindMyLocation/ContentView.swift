@@ -127,8 +127,8 @@ struct ContentView: View {
                 }
                 .padding(.horizontal)
 
-                // AdMob Banner Unit Pinning to Bottom
-                BannerAdView()
+                // AdMob Banner Unit Pinning to Bottom (Using Live Production Ad Unit ID)
+                BannerAdView(useProductionID: true)
                     .frame(width: 320, height: 50)
                     .padding(.bottom, 8)
             }
